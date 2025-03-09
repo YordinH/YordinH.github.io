@@ -1,0 +1,39 @@
+* {
+    display:flex;
+    background-color: darkslategrey;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+header nav {
+    width:35%;
+    flex-wrap: nowrap;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    margin-left: 10%;
+}
+
+a {
+    margin: 20%, 20%;
+}
