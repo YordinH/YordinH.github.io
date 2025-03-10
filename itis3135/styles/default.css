@@ -38,3 +38,12 @@ p {
 a {
     margin: 20%, 20%;
 }
+
+img {
+    max-width: 25%;
+}
+main {
+    align-items: center;
+    justify-content: center;
+    
+}
