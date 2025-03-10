@@ -41,6 +41,7 @@ p {
 a {
     margin: auto;
     padding: 0 20px;
+    color:white;
 }
 
 figure {
@@ -82,4 +83,7 @@ footer {
     display: flex;
     margin-right:0;
     margin-left:auto;
+}
+a:visited {
+    color:white;
 }
