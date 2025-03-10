@@ -36,14 +36,26 @@ p {
 }
 
 a {
-    margin: 20%, 20%;
+    margin: auto;
 }
 
-img {
+figure {
     max-width: 25%;
-}
-main {
+    margin:auto;
+    display:block;
     align-items: center;
-    justify-content: center;
-    
+    text-align: center;
+    padding:30px;
+}
+ul {
+    max-width: 75em;
+    margin:auto;
+    display:block;
+}
+li {
+    padding:5px;
+}
+
+#copyright {
+    text-align: center;
 }
