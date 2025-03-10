@@ -1,5 +1,4 @@
 * {
-    display:flex;
     background-color: darkslategrey;
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,6 +7,7 @@
 }
 
 nav {
+    display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -24,6 +24,7 @@ header nav {
 header {
     align-items: center;
     justify-content: center;
+    display:flex;
 }
 
 h1, h2 {
