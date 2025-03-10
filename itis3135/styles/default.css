@@ -1,5 +1,5 @@
 body, header {
-    background-color: darkslategrey;
+    background-color: rgb(114, 185, 209);
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-wrap: nowrap;
@@ -11,9 +11,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width:100%;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin:20px, 10px;
 }
 
 header nav {
@@ -27,16 +25,22 @@ header {
     display:flex;
 }
 
-h1, h2 {
+h1, h2, h6 {
     text-align: center;
 }
 
 p {
-    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+    margin:auto;
+    background-color: rgba(32,32,32,50%);
+    padding:20px;
+    border-radius: 13px;
 }
 
 a {
     margin: auto;
+    padding: 0 20px;
 }
 
 figure {
@@ -58,4 +62,24 @@ li {
 
 #copyright {
     text-align: center;
+    margin-left:30px;
+    margin-right:auto;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(27, 101, 176);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+.spacer {
+    height:200px;
+}
+.checkers {
+    display: flex;
+    margin-right:0;
+    margin-left:auto;
 }
