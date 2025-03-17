@@ -43,6 +43,7 @@
 			align-items: center;
 			border-radius: 5px;
             width:100%;
+            flex-wrap: wrap;
 		}
         .hidden {
             display:none;
@@ -104,22 +105,23 @@
             flex:1;
             margin:5px;
             color:#c8d8e4;
-            padding:20px;
             justify-content: center;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
+            height: 56px;
         }
         button:hover {
             background:#1f4752; 
         }
         .header-title {
             background:#1f4752;
-            max-width:25%;
+            min-width:25%;
             text-align: center;
             margin-top: 5px;
             min-width: 15%;
             border-radius: 10px;
-            
+            padding-left:8px;
+            padding-right:8px;
         }
         hr {
             border-top:4px solid #2b6777;
@@ -144,7 +146,7 @@
         </div>
         
         <nav>
-            <button onclick="showSection('who')">About</button>
+            <button id="about-button" onclick="showSection('who')">About</button>
             <button onclick="showSection('what')">Home</button>
             <button onclick="showSection('when')">Trading Hours</button>
             <button onclick="showSection('where')">Apps to Start</button>
