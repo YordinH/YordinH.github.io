@@ -6,42 +6,194 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <title>Hobby Page</title>
     <style>
+        html {
+            background-color: #e0e0e0;
+            display:flex;
+            height:100%;
+            
+        }
         body {
+            margin:0px;
+            padding:0px;
             display:flex;
             flex-direction: column;
+            width:100%;
         }
         footer {
-			position: fixed;
 			left: 0;
 			bottom: 0;
 			width: 100%;
-			background: rgb(221, 255, 241);
+			background: #2b6777;
 			display:flex;
 			align-items: center;
 			justify-content: center;
 		}
         a:visited {
-			color:black;
+			color:#52a2ab;
+            font-family: Arial, Helvetica, sans-serif;
 		}
+        a {
+            color:#52a2ab;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav {
+			display:flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			border-radius: 5px;
+            width:100%;
+		}
+        .hidden {
+            display:none;
+        }
+        section {
+            background-color: #c8d8e4;
+            border-radius: 10px;
+            box-sizing: border-box;
+            flex:2;
+            margin:25px;
+            padding:20px;
+            border-radius: 10px;
+            display:block
+        }
+        header {
+            background-color: #52a2ab;
+            left: 0;
+			top: 0;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h3,h4,h5,h6 {
+            color:#17252A;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        h1 {
+            color:#c8d8e4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            margin:0px;
+            color:#17252A;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left:20px;
+            line-height: 2.5;
+        }
+        .sections-container {
+            display:flex;
+            flex-direction: column;
+            width:100%;
+        }
+        button {
+            border:none;
+            border-radius: 4px;
+            background:#2b6777;
+            flex:1;
+            margin:5px;
+            color:#c8d8e4;
+            padding:20px;
+            justify-content: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button:hover {
+            background:#1f4752; 
+        }
+        .header-title {
+            background:#1f4752;
+            max-width:25%;
+            text-align: center;
+            margin-top: 5px;
+            min-width: 15%;
+            border-radius: 10px;
+            
+        }
+        hr {
+            border-top:4px solid #2b6777;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Hobby Title</h1>
+        <div class="header-title">
+            <h1>Day Trading</h1>
+        </div>
+        
         <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <button onclick="showSection('who')">About</button>
+            <button onclick="showSection('what')">Home</button>
+            <button onclick="showSection('when')">Trading Hours</button>
+            <button onclick="showSection('where')">Apps to Start</button>
+            <button onclick="showSection('how')">Basic Market Structure</button>
+            <button onclick="showSection('why')">Benefits</button>
+            <button onclick="showSection('ai')">AI</button>
+            <script>
+                function showSection(sectionId) {
+                // Hide all sections
+                const sections = document.querySelectorAll('.section');
+                sections.forEach((section) => {
+                    section.classList.add('hidden');
+                });
+                
+                // Show the selected section
+                const selectedSection = document.getElementById(sectionId);
+                selectedSection.classList.remove('hidden');
+                }
+            </script>
         </nav>
     </header>
     <main>
-        <h2>Who</h2>
-        <h2>What</h2>
-        <h2>When</h2>
-        <h2>Where</h2>
-        <h2>How</h2>
-        <h2>Why</h2>
-        <h2>Ai Promopts</h2>
+        <div class="sections-container">
+            <section id="who" class="section hidden">
+            <h2>About</h2>
+            <p>Day trading futures involves buying and selling futures contracts within the same trading day to profit from short-term price movements.
+                 Futures are standardized contracts to buy or sell an asset (such as commodities, stocks, indices, or currencies) at a predetermined price on a future date. 
+                 Unlike traditional investing, day traders do not hold positions overnight, reducing exposure to market risks that can arise after trading hours.</p>
+            <p>Popular futures contracts include: S&P 500 E-mini, crude oil, gold.</p>
+            <hr>
+            </section>
+            <section id="what" class="section">
+            <h2>Home</h2>
+            <p>Test</p>
+            </section>
+            <section id="when" class="section hidden">
+            <h2>Trading Hours</h2>
+            <p>Test</p>
+            </section>
+            <section id="where" class="section hidden">
+            <h2>Applications to Start (where)</h2>
+            <p>Test</p>
+            </section>
+            <section  id="how" class="section hidden">
+            <h2>Basic Market Sturcture (how)</h2>
+            <p>Test</p>
+            </section>
+            <section  id="why" class="section hidden">
+            <h2>Benefits</h2>
+            <p>Test.</p>
+            </section>
+            <section id="ai" class="section hidden">
+            <h2>Ai Prompts</h2>
+            <p>
+                AI prompts: Overview of day trading futures
+            </p>
+            </section>  
+        </div>
+        
     </main>
     <footer>
         <h5 id="copyright">Designed by <a href="../../index.html">Hasty Designs ©2025</a></h5>
